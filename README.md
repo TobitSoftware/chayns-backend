@@ -4,8 +4,6 @@ The backend API provides additional possibilites on top of the frontend API. To 
 ### General
 The requests in frontend and backend have the same structure. For the authorization you can use the Tapp Secret along with the TappID in the backend or a PageAccessToken in the frontend. 
 
-<b>The current API version is 2.0.</b>
-
 The request structure looks like
 
 ```
