@@ -13,7 +13,7 @@ https://api.chayns.net/{APIVersion}/{LocationID}/{Controller}/{ObjectID}
 ```
 (the ObjectID parameter is optional).
 
-Parameters in following examples explained
+General parameters explained
 
 * APIVersion - string: Compound of the letter 'v' and the API version. So the parameter could look like 'v2.0'.
 * LocationID - int: The ID of the current location. It is contained in chayns.env.site.locationId.
