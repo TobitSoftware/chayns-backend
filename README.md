@@ -15,7 +15,7 @@ https://api.chayns.net/{APIVersion}/{LocationID}/{Controller}/{ObjectID}
 
 Parameters in following examples explained
 
-* APIVersion - string: 
+* APIVersion - string: Compound of the letter 'v' and the API version. So the parameter could look like 'v2.0'.
 * LocationID - int: The ID of the current location. It is contained in chayns.env.site.locationId.
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
