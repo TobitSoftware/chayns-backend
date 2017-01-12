@@ -1,5 +1,5 @@
 # chayns® Backend API [v2.0]
-The backend API provides additional possibilites on top of the frontend API. To use this API, the tapp must be registered in the Tapp administration on this site. After the registration the Tapp Secret is needed for the authorization on request to the API. 
+The backend API provides additional possibilites on top of the frontend API. To use this API, the tapp must be registered in the Tapp administration in the [TSPN](https://en.tspn.tobit.software). After the registration the Tapp Secret is needed for the authorization on request to the API. 
 
 ### Preparation
 To use the chayns® Backend API, you have to register your Tapp in the Tapp Administration on TSPN. With the registration, you will get an Tapp Secret. This secret is very important and you shouldn't use your secret in your frontend!  
