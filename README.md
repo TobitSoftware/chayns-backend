@@ -15,9 +15,10 @@ https://api.chayns.net/{APIVersion}/{LocationID}/{Controller}/{ObjectID}
 
 Parameters in following examples explained
 
+* APIVersion - string: 
 * LocationID - int: The ID of the current location. It is contained in chayns.env.site.locationId.
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
 ### chayns® Helper
-In order to make it easier to you to use the Backend API, we provide the chayns helper that comes with a lot of helpful features and simplifications. <br>
+In order to make it easier to you to use the Backend API, we provide the chayns helper that comes with a lot of helpful features.<br>
 More information can be found [here](https://github.com/TobitSoftware/chayns-backend-dotnet).
