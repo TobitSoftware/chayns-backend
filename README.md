@@ -19,4 +19,5 @@ Parameters in following examples explained
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
 ### chayns® Helper
-In order to make it easier to you to use the Backend API, we provide the chayns helper that comes with a lot of helpful features and simplifications. 
+In order to make it easier to you to use the Backend API, we provide the chayns helper that comes with a lot of helpful features and simplifications. <br>
+More information can be found [here](https://github.com/TobitSoftware/chayns-backend-dotnet).
