@@ -10,8 +10,8 @@ The request structure looks like
 
 ```
 https://api.chayns.net/{APIVersion}/{LocationID}/{Controller}/{ObjectID}
-```(the ObjectID parameter is optional).
-
+```
+(the ObjectID parameter is optional).
 
 Parameters in following examples explained
 
