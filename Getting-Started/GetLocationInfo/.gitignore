@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+C#/packages
+C#/LocationInfo/bin
+C#/LocationInfo/obj
+NodeJS/dist
+NodeJS/node_modules

@@ -1,0 +1,25 @@
+{
+  "name": "node-chayns-sample-createPageAcessToken",
+  "version": "1.0.0",
+  "description": "Sample of a nodeJS app using the chayns backend API to create a PageAccessToken that can be used clientside to perform backend requests.",
+  "main": "dist/index.js",
+  "scripts": {
+    "watch": "babel -w src/ -d dist/",
+    "build": "babel src/ -d dist/",
+    "server": "babel -w src/ -d dist/ | nodemon --watch dist"
+  },
+  "author": "Benedikt Schulze Baek",
+  "license": "",
+  "dependencies": {
+    "express": "*",
+    "node-fetch": "*",
+    "btoa": "*"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "nodemon": "^1.11.0"
+  }
+}
