@@ -1,5 +1,5 @@
 # chayns® Backend API [v2.0]
-The backend API provides additional possibilites on top of the frontend API. To use this API, the tapp must be registered in the Tapp administration in the [TSPN](https://en.tspn.tobit.software). After the registration the Tapp Secret is needed for the authorization on requests to the API. 
+The backend API provides additional possibilites on top of the frontend API. To use this API, the tapp must be registered in the Tapp administration in the [TSPN](https://tspn.tobit.software). After the registration the Tapp Secret is needed for the authorization on requests to the API. 
 
 ### General
 The requests in frontend and backend have the same structure. For the authorization you can use the Tapp Secret along with the TappID in the backend or a PageAccessToken in the frontend. 
@@ -18,7 +18,3 @@ General parameters explained
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
 For more detailed information on the Backend API you should take a look at the [official documentation](https://github.com/TobitSoftware/chayns-backend/wiki).
-
-### chayns® Helper
-In order to make it easier to you to use the Backend API, we provide the chayns helper that comes with a lot of helpful features.<br>
-More information can be found [here](https://github.com/TobitSoftware/chayns-backend-dotnet).
