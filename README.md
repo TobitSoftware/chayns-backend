@@ -17,4 +17,4 @@ General parameters explained
 * LocationID - int: The ID of the current location. It is contained in chayns.env.site.locationId.
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
-For more detailed information on the Backend API you should take a look at the [official documentation](https://github.com/TobitSoftware/chayns-backend/wiki).
+For more detailed information on the Backend API you should take a look at the [Wiki](https://github.com/TobitSoftware/chayns-backend/wiki).
