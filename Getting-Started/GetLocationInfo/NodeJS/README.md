@@ -14,7 +14,7 @@ npm install
 ```
 npm run server
 ```
-#### 4.Run your browser - http://localhost:8080
+#### 4.Run your browser - http://localhost:8080/LocationInfo
 
 #### 5.Start work
 

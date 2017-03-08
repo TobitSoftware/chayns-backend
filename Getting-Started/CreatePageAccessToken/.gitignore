@@ -1,7 +1,0 @@
-node_modules/
-.idea/
-C#/packages
-C#/PageAccessToken/bin
-C#/PageAccessToken/obj
-NodeJS/dist
-NodeJS/node_modules

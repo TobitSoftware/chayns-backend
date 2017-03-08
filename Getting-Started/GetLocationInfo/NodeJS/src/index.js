@@ -10,7 +10,14 @@ let server = app.listen(8080, function() {
 const Server = 'https://api.chayns.net/v2.0/';
 const Secret = ''; //replace this string with your tapp secret located in the tapp administration
 
-app.get('/LocationInfo', (req, res) => { //Get url parameters using the req-object
+//This method enables cors for this api
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.get('/LocationInfo', (req, res, next) => { //Get url parameters using the req-object
     try {
         let url = Server + req.query.locationId; //build the url to request the location endpoint
         let config = {
@@ -22,8 +29,8 @@ app.get('/LocationInfo', (req, res) => { //Get url parameters using the req-obje
         }
         fetch(url, config).then(response => {
             if (response.status === 200) { 
-                response.json().then((data) => {
-                    res.send(data); //if the request was successful, send the aquired data to the client
+                response.json().then((data) => { //if the request was successful, extract the data from the response
+                    res.send(data); //send the aquired data to the client
                 });
             } else {
                 res.send(response.status); //if the request failed, send the http status to the client

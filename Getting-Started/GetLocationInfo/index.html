@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8">
+
+  <title>Getting Started</title>
+
+  <link rel="stylesheet" href="https://chayns-res.tobit.com/API/V3.1/css/chayns.min.css">
+ </head>
+ <body>
+  <div class="tapp">
+      
+   <div class="tapp__hint"> This tapp is dedicated to the chayns Backend <a target="_blank" href="https://github.com/TobitSoftware/chayns-backend/wiki/Getting-Started">Getting Started Guide</a>.</div>
+   <div class="tapp__intro">
+    <h1 id="headline">Chayns Location Info</h1>
+    <p>This tapp shows you the 'how-to' and result of requesting data via the chayns Backend API.</p>
+    <p>
+        The fetch to the API will be executed when chayns is ready.<br>
+        If the fetch does not work properly, make sure the url is pointing to the API.<br>
+        If everything works fine, you will see a content__card element filled with information to the current chayns site.
+    </p>
+   </div>
+      
+   <div class="tapp__content">
+       <div class="content__card" id="content" style="display: none;">
+           <h2>Information</h2>
+       </div>
+   </div>
+
+  </div>
+
+  <script src="https://chayns-res.tobit.com/API/V3.1/js/chayns.min.js"></script>
+  <script>
+  chayns.ready
+   .then(function resolved(data){
+      
+      //These are the default urls to the api's provided in this sample. Select the url to your chosen api and insert it to the fetch.
+      var csharpUrl = "http://localhost/LocationInfo/Location?locationId=" + chayns.env.site.locationId + "&tappId=" + chayns.env.site.tapp.id;
+      var nodejsUrl = "http://localhost:8080/LocationInfo?locationId=" + chayns.env.site.locationId + "&tappId=" + chayns.env.site.tapp.id;
+      
+      fetch(csharpUrl).then(function (response) { //perform the request to the api
+         if (response.status === 200) { //if the request was successful.. 
+             response.json().then(function (data) { //.. extract the data from the response
+                 console.log(data);
+                 
+                 //save the data to a lighter variable and write them to the document
+                 var info = data.data[0]; //this is an object containing information to the current chayns site
+                 document.getElementById('content').innerHTML += (
+                     "SiteName: " + info.appName + "<br>" + 
+                     "SiteId: " + info.siteId + "<br>" +
+                     "LocationId: " + info.locationId + "<br>" +
+                     "Users: " + info.countMember
+                 );
+                 //show the content__card the content was inserted to
+                 document.getElementById('content').style.display = "block";
+             });
+         } 
+      });
+    });
+  </script>
+ </body>
+</html>
