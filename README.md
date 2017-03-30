@@ -1,3 +1,5 @@
+[![license](https://img.shields.io/github/license/TobitSoftware/chayns-backend.svg)]() [![GitHub pull requests](https://img.shields.io/github/issues-pr/TobitSoftware/chayns-backend.svg)]() [![](https://img.shields.io/github/issues-pr-closed-raw/TobitSoftware/chayns-backend.svg)]()
+
 # chayns® Backend API [v2.0]
 The backend API provides additional possibilites on top of the frontend API. To use this API, the tapp must be registered in the Tapp administration in the [TSPN](https://tspn.tobit.software). After the registration the Tapp Secret is needed for the authorization on requests to the API. 
 
