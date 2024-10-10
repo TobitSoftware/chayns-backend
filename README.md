@@ -1,3 +1,11 @@
+
+#  ⚠️Deprecated
+
+The backend API is no longer maintained. We recommend using [`chayns.codes`](https://chayns.site/chaynscodes-api-dokumentation) instead. A good place to start is [chayns.site/api](https://chayns.site/api).
+
+<details>
+	<summary>View original Readme</summary>
+	
 [![license](https://img.shields.io/github/license/TobitSoftware/chayns-backend.svg)]() [![GitHub pull requests](https://img.shields.io/github/issues-pr/TobitSoftware/chayns-backend.svg)]() [![](https://img.shields.io/github/issues-pr-closed-raw/TobitSoftware/chayns-backend.svg)]()
 
 # chayns® Backend API [v2.0]
@@ -20,3 +28,5 @@ General parameters explained
 * TappID - int: The ID of the current tapp. It is contained in chayns.env.site.tapp.id and used in the Authorization header.
 
 For more detailed information on the Backend API you should take a look at the [Wiki](https://github.com/TobitSoftware/chayns-backend/wiki) or at the [Getting Started](https://github.com/TobitSoftware/chayns-backend/wiki/Getting-Started).
+
+</details>
